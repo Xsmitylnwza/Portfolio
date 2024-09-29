@@ -1,5 +1,4 @@
 import {
-  FaFacebookSquare,
   FaGithubSquare,
   FaInstagramSquare,
   FaLinkedin,
@@ -14,22 +13,14 @@ export default function Aboutme() {
           I'm Chaimongkon Sokgampang I'm a Developer.
         </div>
         <div className="font-light text-[18px]">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          dolorem eum accusamus! Magni, incidunt ab. Repellat ut alias cumque?
-          Exercitationem ex quod praesentium amet maxime vero modi sequi commodi
-          unde
+          am a passionate and motivated student with a strong interest in coding
+          and a goal to become a skilled full-stack developer. I am eager to
+          develop my technical abilities by gaining hands-on experience working
+          on diverse projects.
         </div>
         <div className="flex gap-[15px] mt-[50px]">
           <a
-            href="https://www.google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer"
-          >
-            <FaFacebookSquare size={22} />
-          </a>
-          <a
-            href="https://www.google.com"
+            href="https://github.com/Xsmitylnwza"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer"
@@ -37,7 +28,7 @@ export default function Aboutme() {
             <FaGithubSquare size={22} />
           </a>
           <a
-            href="https://www.google.com"
+            href="https://medium.com/@golfpopmei14"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer"
@@ -45,7 +36,7 @@ export default function Aboutme() {
             <FaMedium size={22} />
           </a>
           <a
-            href="https://www.google.com"
+            href="https://www.instagram.com/viewvyz_/"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer"
@@ -53,7 +44,7 @@ export default function Aboutme() {
             <FaInstagramSquare size={22} />
           </a>
           <a
-            href="https://www.google.com"
+            href="https://www.linkedin.com/in/xsmity-vi-266a05323/"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer"

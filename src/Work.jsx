@@ -8,43 +8,43 @@ export default function Work() {
     {
       name: "Wild-Oasis Hotel Management",
       src: "/Wild-Oasis.png",
-      category: "FE",
+      category: ["FE", "BE", "DEVOPS"],
       url: "https://the-wild-osasis-bay.vercel.app/",
     },
     {
       name: "Zuchini Review",
       src: "/zuchini-review.png",
-      category: "BE",
+      category: ["FE", "BE", "DEVOPS"],
       url: "https://zuchini-review.vercel.app/",
     },
     {
       name: "Decrypt the secrects password",
       src: "/password-game.png",
-      category: "DEVOPS",
+      category: ["FE"],
       url: "https://bejewelled-puppy-73e34d.netlify.app/",
     },
     {
       name: "HelloGoose campus PR website",
       src: "/hello-goose.png",
-      category: "FE",
+      category: ["DEVOPS"],
       url: "https://hello-goose.vercel.app/",
     },
     {
       name: "Amoung Duck",
       src: "/among-duck.png",
-      category: "BE",
+      category: ["DEVOPS"],
       url: "https://among-duck-hellogoose.vercel.app/",
     },
     {
       name: "Intregated Project Kradan Board",
       src: "/intregated-projects.png",
-      category: "DEVOPS",
+      category: ["FE", "BE", "DEVOPS"],
       url: "https://intproj23.sit.kmutt.ac.th/sy2/",
     },
   ];
 
   const filteredWorks = works.filter(
-    (work) => filter === "All" || work.category === filter
+    (work) => filter === "All" || work.category.includes(filter)
   );
 
   return (
