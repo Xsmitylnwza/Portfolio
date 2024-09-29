@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  background: linear-gradient(90deg, #2c2c2c 0%, #000c50 100%);
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* ลอยขึ้น 10px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated-float {
+  animation: floatUpDown 3s ease-in-out infinite; /* ทำให้ animation ทำงานซ้ำตลอดไป */
+}
+
+/* ตกแต่ง scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d0067; /* สีของ thumb (ส่วนที่ใช้อยู่นั้น) */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #130070; /* สีของ thumb เมื่อ hover */
+}
