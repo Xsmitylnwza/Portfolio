@@ -14,8 +14,8 @@ export default function Job({works}) {
             rel="noopener noreferrer"
             className="absolute inset-0 bg-black opacity-0 hover:opacity-75 transition-opacity duration-400 cursor-pointer flex items-center justify-center"
           >
-            <div className="text-[50px] text-white text-center">
-              Click to view Website
+            <div className="text-[20px] text-white text-center px-[20px]">
+              {work.details}
             </div>
           </a>
           <div className="mt-[5px]">{work.name}</div>

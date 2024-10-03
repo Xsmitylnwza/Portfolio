@@ -8,36 +8,47 @@ export default function Work() {
     {
       name: "Wild-Oasis Hotel Management",
       src: "/Wild-Oasis.png",
+      details: "Hotel management app that use can manage their resource",
       category: ["FE", "BE", "DEVOPS"],
       url: "https://the-wild-osasis-bay.vercel.app/",
     },
     {
       name: "Zuchini Review",
       src: "/zuchini-review.png",
+      details:
+        "Website for viewing and writing reviews of movies based on rotten tomatoes",
       category: ["FE", "BE", "DEVOPS"],
       url: "https://zuchini-review.vercel.app/",
     },
     {
       name: "Decrypt the secrects password",
       src: "/password-game.png",
+      details:
+        "It's a game for cracking passwords to pass all levels to win the game.",
       category: ["FE"],
       url: "https://bejewelled-puppy-73e34d.netlify.app/",
     },
     {
       name: "HelloGoose campus PR website",
       src: "/hello-goose.png",
+      details:
+        "A website for advertising Hello World Camp. The website has details of the content that will be taught within the camp.",
       category: ["DEVOPS"],
       url: "https://hello-goose.vercel.app/",
     },
     {
       name: "Amoung Duck",
       src: "/among-duck.png",
+      details:
+        "Advertising game. Hello World Campus helps juniors find their own passions in the content the camp teaches.",
       category: ["DEVOPS"],
       url: "https://among-duck-hellogoose.vercel.app/",
     },
     {
       name: "Intregated Project Kradan Board",
       src: "/intregated-projects.png",
+      details:
+        "A Todo list application for management tasks provide a feature to customization the entire app that user can settings on own way",
       category: ["FE", "BE", "DEVOPS"],
       url: "https://intproj23.sit.kmutt.ac.th/sy2/",
     },
