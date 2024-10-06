@@ -93,7 +93,7 @@ export default function ProjectLayout() {
   return (
     <div className="overflow-auto">
       <Topic topic="My Works" />
-      <div className="flex justify-between w-[50%] ml-auto mr-auto mb-[15px]">
+      <div className="flex justify-between w-auto md:w-[80%] lg:w-[50%] ml-auto mr-auto mb-[15px]">
         {filters.map((item) => (
           <button
             key={item.value}
