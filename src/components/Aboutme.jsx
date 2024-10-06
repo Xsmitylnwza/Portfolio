@@ -20,8 +20,8 @@ const iconData = [
 
 export default function Aboutme() {
   return (
-    <div className="flex justify-between px-[75px] mb-[40px]">
-      <div className="w-[50%]">
+    <div className="flex flex-col-reverse sm:flex-row justify-between px-[6%] mb-[40px]">
+      <div className="w-full sm:w-[50%]">
         <div className="font-medium text-[35px]">
           I'm Chaimongkon Sokgampang I'm a Developer.
         </div>
@@ -45,7 +45,7 @@ export default function Aboutme() {
           ))}
         </div>
       </div>
-      <div className="w-[40%] ml-auto">
+      <div className="w-[200px] sm:w-[40%] ">
         <img
           src="./myself.png"
           className="animated-float w-[300px] h-[350px] rounded-lg"
