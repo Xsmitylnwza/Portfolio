@@ -8,8 +8,10 @@ export default function Work() {
     {
       name: "Wild-Oasis Hotel Management",
       src: "/Wild-Oasis.png",
-      details: "Hotel management app that use can manage their resource",
-      category: ["FE", "BE", "DEVOPS"],
+      details:
+        "Hotel management app that use can manage their resource project from React & Next.js course.",
+      category: ["FE", "BE"],
+      tools: ["react", "reactquery", "supabase", "postgres"],
       url: "https://the-wild-osasis-bay.vercel.app/",
     },
     {
@@ -17,7 +19,8 @@ export default function Work() {
       src: "/zuchini-review.png",
       details:
         "Website for viewing and writing reviews of movies based on rotten tomatoes",
-      category: ["FE", "BE", "DEVOPS"],
+      category: ["FE", "BE"],
+      tools: ["vue", "supabase", "postgres"],
       url: "https://zuchini-review.vercel.app/",
     },
     {
@@ -26,6 +29,7 @@ export default function Work() {
       details:
         "It's a game for cracking passwords to pass all levels to win the game.",
       category: ["FE"],
+      tools: ["vue"],
       url: "https://bejewelled-puppy-73e34d.netlify.app/",
     },
     {
@@ -34,6 +38,7 @@ export default function Work() {
       details:
         "A website for advertising Hello World Camp. The website has details of the content that will be taught within the camp.",
       category: ["DEVOPS"],
+      tools: ["docker"],
       url: "https://hello-goose.vercel.app/",
     },
     {
@@ -42,6 +47,7 @@ export default function Work() {
       details:
         "Advertising game. Hello World Campus helps juniors find their own passions in the content the camp teaches.",
       category: ["DEVOPS"],
+      tools: ["docker"],
       url: "https://among-duck-hellogoose.vercel.app/",
     },
     {
@@ -50,7 +56,17 @@ export default function Work() {
       details:
         "A Todo list application for management tasks provide a feature to customization the entire app that user can settings on own way",
       category: ["FE", "BE", "DEVOPS"],
+      tools: ["vue", "springboot", "mysql", "docker"],
       url: "https://intproj23.sit.kmutt.ac.th/sy2/",
+    },
+    {
+      name: "Wild-Oasis-Next.js",
+      src: "/wild-oasis-nextjs.png",
+      details:
+        "A mini hotel management application made by Next.js from my React & Next.js course.",
+      category: ["FE", "BE"],
+      tools: ["react", "supabase", "postgres"],
+      url: "https://the-wild-oasis-nextjs-7p3w.vercel.app/",
     },
   ];
 

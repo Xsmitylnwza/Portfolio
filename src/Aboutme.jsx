@@ -5,6 +5,19 @@ import {
   FaMedium,
 } from "react-icons/fa";
 
+const iconData = [
+  {url: "https://github.com/Xsmitylnwza", icon: <FaGithubSquare size={25} />},
+  {url: "https://medium.com/@golfpopmei14", icon: <FaMedium size={25} />},
+  {
+    url: "https://www.instagram.com/viewvyz_/",
+    icon: <FaInstagramSquare size={25} />,
+  },
+  {
+    url: "https://www.linkedin.com/in/xsmity-vi-266a05323/",
+    icon: <FaLinkedin size={25} />,
+  },
+];
+
 export default function Aboutme() {
   return (
     <div className="flex justify-between px-[75px] mb-[40px]">
@@ -19,45 +32,24 @@ export default function Aboutme() {
           on diverse projects.
         </div>
         <div className="flex gap-[15px] mt-[50px]">
-          <a
-            href="https://github.com/Xsmitylnwza"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer"
-          >
-            <FaGithubSquare size={22} />
-          </a>
-          <a
-            href="https://medium.com/@golfpopmei14"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer"
-          >
-            <FaMedium size={22} />
-          </a>
-          <a
-            href="https://www.instagram.com/viewvyz_/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer"
-          >
-            <FaInstagramSquare size={22} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/xsmity-vi-266a05323/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer"
-          >
-            <FaLinkedin size={22} />
-          </a>
+          {iconData.map((data, index) => (
+            <a
+              key={index}
+              href={data.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer transform hover:scale-125 duration-200"
+            >
+              {data.icon}
+            </a>
+          ))}
         </div>
       </div>
       <div className="w-[40%]">
         <img
           src="./myself.png"
           className="animated-float w-[300px] h-[350px] rounded-lg"
-        ></img>
+        />
       </div>
     </div>
   );
