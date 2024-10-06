@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
       <div className="flex flex-col items-center">
         {<FaReact size={30} />}
-        <div>Made with React.</div>
+        <div className="text-center sm:text-start">Made with React.</div>
       </div>
     </div>
   );
