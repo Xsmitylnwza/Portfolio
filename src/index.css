@@ -41,3 +41,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #130070; /* สีของ thumb เมื่อ hover */
 }
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}

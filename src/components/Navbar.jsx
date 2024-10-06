@@ -5,7 +5,9 @@ export default function Navbar() {
   return (
     <div className="flex justify-between min-h-[50px]  mb-[25px] ">
       <div className="flex">
-        <div className="text-[50px] mr-[25px]">{<GiEvilLove size={50} />}</div>
+        <div className="animated-float text-[50px] mr-[25px]">
+          {<GiEvilLove size={50} />}
+        </div>
         <div>
           <div className="text-[20px] font-semibold">XSMITY PORTFOLIO</div>
           <div className="text-[14px] leading-4">
@@ -16,7 +18,7 @@ export default function Navbar() {
       </div>
       <div className="flex flex-col items-center">
         {<FaReact size={30} />}
-        <div>Made by React.</div>
+        <div>Made with React.</div>
       </div>
     </div>
   );

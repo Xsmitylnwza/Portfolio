@@ -6,15 +6,15 @@ import {
 } from "react-icons/fa";
 
 const iconData = [
-  {url: "https://github.com/Xsmitylnwza", icon: <FaGithubSquare size={25} />},
-  {url: "https://medium.com/@golfpopmei14", icon: <FaMedium size={25} />},
+  {url: "https://github.com/Xsmitylnwza", icon: <FaGithubSquare size={32} />},
+  {url: "https://medium.com/@golfpopmei14", icon: <FaMedium size={32} />},
   {
     url: "https://www.instagram.com/viewvyz_/",
-    icon: <FaInstagramSquare size={25} />,
+    icon: <FaInstagramSquare size={32} />,
   },
   {
     url: "https://www.linkedin.com/in/xsmity-vi-266a05323/",
-    icon: <FaLinkedin size={25} />,
+    icon: <FaLinkedin size={32} />,
   },
 ];
 
@@ -45,10 +45,11 @@ export default function Aboutme() {
           ))}
         </div>
       </div>
-      <div className="w-[40%]">
+      <div className="w-[40%] ml-auto">
         <img
           src="./myself.png"
           className="animated-float w-[300px] h-[350px] rounded-lg"
+          alt="myself"
         />
       </div>
     </div>
