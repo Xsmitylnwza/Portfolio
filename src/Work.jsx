@@ -4,6 +4,13 @@ import Job from "./Job";
 export default function Work() {
   const [filter, setFilter] = useState("All");
 
+  const filters = [
+    {label: "All", value: "All"},
+    {label: "Front-End", value: "FE"},
+    {label: "Back-End", value: "BE"},
+    {label: "DevOps", value: "DEVOPS"},
+  ];
+
   const works = [
     {
       name: "Wild-Oasis Hotel Management",
@@ -76,49 +83,25 @@ export default function Work() {
 
   return (
     <div className="">
+      <div className="text-[32px] text-center mb-[25px]">My Works</div>
       <div className="flex justify-between w-[50%] ml-auto mr-auto mb-[15px]">
-        <button
-          className={` rounded-[12px] min-w-[50px] px-[7px] py-[5px] duration-100 hover:brightness-50  ${
-            filter === "All"
-              ? "bg-gray-200 text-gray-900 font-[600]"
-              : "text-gray-200 bg-gray-900"
-          }`}
-          onClick={() => setFilter("All")}
-        >
-          All
-        </button>
-        <button
-          className={`rounded-[8px] min-w-[50px] px-[7px] py-[5px] duration-100 hover:brightness-50  ${
-            filter === "FE"
-              ? "bg-gray-200 text-gray-800 font-[600]"
-              : "text-gray-200 bg-gray-900"
-          }`}
-          onClick={() => setFilter("FE")}
-        >
-          Front-End
-        </button>
-        <button
-          className={`rounded-[8px] min-w-[50px] px-[7px] py-[5px] duration-100 hover:brightness-50  ${
-            filter === "BE"
-              ? "bg-gray-200 text-gray-800 font-[600]"
-              : "text-gray-200 bg-gray-900"
-          }`}
-          onClick={() => setFilter("BE")}
-        >
-          Back-End
-        </button>
-        <button
-          className={`rounded-[8px] min-w-[50px] px-[7px] py-[5px] duration-100 hover:brightness-50  ${
-            filter === "DEVOPS"
-              ? "bg-gray-200 text-gray-800 font-[600]"
-              : "text-gray-200 bg-gray-900"
-          }`}
-          onClick={() => setFilter("DEVOPS")}
-        >
-          DevOps
-        </button>
+        {filters.map((item) => (
+          <button
+            key={item.value}
+            className={`rounded-[8px] min-w-[50px] px-[7px] py-[5px] duration-100 hover:brightness-50 ${
+              filter === item.value
+                ? "bg-gray-200 text-gray-800 font-[600]"
+                : "text-gray-200 bg-gray-900"
+            }`}
+            onClick={() => setFilter(item.value)}
+          >
+            {item.label}
+          </button>
+        ))}
       </div>
       <Job works={filteredWorks} />
+      <div className="text-[32px] text-center mb-[25px]">My Activities</div>
+      <div className="text-[32px] text-center mb-[25px]">My Certificates</div>
     </div>
   );
 }
