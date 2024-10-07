@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="text-[20px] font-semibold">XSMITY PORTFOLIO</div>
           <div className="text-[14px] leading-4">
             <div>King mongkut's university of technology thonburi</div>
-            <div>Information and Technology</div>
+            <div>Information and Technology #IT28</div>
           </div>
         </div>
       </div>
