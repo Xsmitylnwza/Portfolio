@@ -1,6 +1,7 @@
 import {CgCornerDownRight} from "react-icons/cg";
 import {ImGithub} from "react-icons/im";
 import {SiUdemy} from "react-icons/si";
+import Cappitalrize from "../../util/Cappitalrize";
 
 export default function RenderButton({work}) {
   const iconBtn = {
@@ -11,10 +12,6 @@ export default function RenderButton({work}) {
     },
     udemy: {icon: <SiUdemy size={20} />, class: "hover:bg-purple-800"},
   };
-
-  function Cappitalrize(text) {
-    return text.charAt(0).toUpperCase() + text.slice(1);
-  }
 
   return (
     <div className="flex gap-[20px] mt-auto mb-[25px]">

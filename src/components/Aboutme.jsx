@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaMedium,
 } from "react-icons/fa";
+import RenderTools from "./share/RenderTool";
 
 const iconData = [
   {url: "https://github.com/Xsmitylnwza", icon: <FaGithubSquare size={32} />},
@@ -16,6 +17,25 @@ const iconData = [
     url: "https://www.linkedin.com/in/xsmity-vi-266a05323/",
     icon: <FaLinkedin size={32} />,
   },
+];
+
+const tools = [
+  "react",
+  "react_query",
+  "redux",
+  "nextjs",
+  "vue",
+  "java_script",
+  "tailwind",
+  "styled_components",
+  "spring_boot",
+  "java",
+  "my_sql",
+  "mongo",
+  "docker",
+  "kubernetes",
+  "github",
+  "github_action",
 ];
 
 export default function Aboutme() {
@@ -31,6 +51,8 @@ export default function Aboutme() {
           to develop my technical abilities by gaining hands-on experience
           working on diverse projects.
         </div>
+        <RenderTools name="Tech Stack" tools={tools} />
+
         <div className="flex gap-[15px] justify-center sm:justify-start mt-[50px] ">
           {iconData.map((data, index) => (
             <a
@@ -45,7 +67,7 @@ export default function Aboutme() {
           ))}
         </div>
       </div>
-      <div className="w-[200px] ml-auto mr-auto sm:ml-0 sm:mr-0 sm:w-[40%] ">
+      <div className="w-[250px] ml-auto mr-auto sm:ml-0 sm:mr-0 sm:w-[40%] ">
         <img
           src="./myself.png"
           className="animated-float w-[300px] h-[350px] rounded-lg"

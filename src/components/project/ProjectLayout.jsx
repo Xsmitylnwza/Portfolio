@@ -17,7 +17,7 @@ const projects = [
     details:
       "Hotel management app that use can manage their resource project from React & Next.js course.",
     category: ["FE", "BE"],
-    tools: ["react", "reactquery", "supabase", "postgres"],
+    tools: ["react", "react_query", "supabase", "postgres"],
     button: [
       {name: "github", url: "https://github.com/Xsmitylnwza/The-wild-osasis"},
       {name: "demo", url: "https://the-wild-osasis-bay.vercel.app/"},
@@ -83,7 +83,7 @@ const projects = [
     details:
       "A Todo list application for management tasks provide a feature to customization the entire app that user can settings on own way",
     category: ["FE", "BE", "DEVOPS"],
-    tools: ["vue", "springboot", "mysql", "docker"],
+    tools: ["vue", "spring_boot", "my_sql", "docker"],
     button: [
       {name: "github", url: "https://github.com/Mixue-it-TH"},
       {name: "demo", url: "https://intproj23.sit.kmutt.ac.th/sy2/"},
