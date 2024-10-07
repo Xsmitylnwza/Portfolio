@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(90deg, #2c2c2c 0%, #000c50 100%);
+  background-color: rgb(43, 43, 43);
+
 }
 
 .box {
