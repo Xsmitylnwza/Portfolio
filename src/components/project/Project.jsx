@@ -16,14 +16,14 @@ export default function Project({work, index}) {
         <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80 transition-opacity duration-400 flex items-center justify-center">
           <div className="flex flex-col items-center h-full">
             <RenderDetail detail={work.details} />
-            <RenderTools tools={work.tools} />
-            <RenderButton work={work} />
+            <RenderTools name="Tech Stack" tools={work.tools} />
+            <RenderButton work={work.button} />
           </div>
         </div>
       </div>
       <div className="mt-[5px] mb-[8px]">
         <a
-          href={work.github}
+          href={work.button[0].url}
           target="_blank"
           rel="noopener noreferrer"
           data-tooltip-id="github"

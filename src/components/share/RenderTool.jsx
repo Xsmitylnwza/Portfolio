@@ -16,10 +16,10 @@ const toolIcon = {
   docker: <FaDocker color="#129fdb" size={35} />,
 };
 
-export default function RenderTools({tools}) {
+export default function RenderTools({name, tools}) {
   return (
     <div className="flex flex-row gap-3 mt-[15px]">
-      <span className="mt-[5px]">Tech Stack:</span>
+      <span className="mt-[5px]">{name}:</span>
       {tools.map((tool, index) => (
         <>
           <div

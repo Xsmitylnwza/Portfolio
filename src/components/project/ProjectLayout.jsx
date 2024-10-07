@@ -18,8 +18,10 @@ const projects = [
       "Hotel management app that use can manage their resource project from React & Next.js course.",
     category: ["FE", "BE"],
     tools: ["react", "reactquery", "supabase", "postgres"],
-    github: "https://github.com/Xsmitylnwza/The-wild-osasis",
-    url: "https://the-wild-osasis-bay.vercel.app/",
+    button: [
+      {name: "github", url: "https://github.com/Xsmitylnwza/The-wild-osasis"},
+      {name: "demo", url: "https://the-wild-osasis-bay.vercel.app/"},
+    ],
   },
   {
     name: "Zuchini Review",
@@ -28,8 +30,10 @@ const projects = [
       "Website for viewing and writing reviews of movies based on rotten tomatoes",
     category: ["FE", "BE"],
     tools: ["vue", "supabase", "postgres"],
-    github: "https://github.com/Xsmitylnwza/Zuchini-Review",
-    url: "https://zuchini-review.vercel.app/",
+    button: [
+      {name: "github", url: "https://github.com/Xsmitylnwza/Zuchini-Review"},
+      {name: "demo", url: "https://zuchini-review.vercel.app/"},
+    ],
   },
   {
     name: "Decrypt the secrects password",
@@ -38,8 +42,16 @@ const projects = [
       "It's a game for cracking passwords to pass all levels to win the game.",
     category: ["FE"],
     tools: ["vue"],
-    github: "https://github.com/Xsmitylnwza/Decrypt-The-Secrect-Password",
-    url: "https://bejewelled-puppy-73e34d.netlify.app/",
+    button: [
+      {
+        name: "github",
+        url: "https://github.com/Xsmitylnwza/Decrypt-The-Secrect-Password",
+      },
+      {
+        name: "demo",
+        url: "https://bejewelled-puppy-73e34d.netlify.app/",
+      },
+    ],
   },
   {
     name: "HelloGoose campus PR website",
@@ -48,8 +60,10 @@ const projects = [
       "A website for advertising Hello World Camp. The website has details of the content that will be taught within the camp.",
     category: ["DEVOPS"],
     tools: ["docker"],
-    github: "https://github.com/Hello-Goose/Hello-Goose",
-    url: "https://hello-goose.vercel.app/",
+    button: [
+      {name: "github", url: "https://github.com/Hello-Goose/Hello-Goose"},
+      {name: "demo", url: "https://hello-goose.vercel.app/"},
+    ],
   },
   {
     name: "Amoung Duck",
@@ -58,8 +72,10 @@ const projects = [
       "Advertising game. Hello World Campus helps juniors find their own passions in the content the camp teaches.",
     category: ["DEVOPS"],
     tools: ["docker"],
-    github: "https://github.com/Xsmitylnwza/AmongDuckPls",
-    url: "https://among-duck-hellogoose.vercel.app/",
+    button: [
+      {name: "github", url: "https://github.com/Xsmitylnwza/AmongDuckPls"},
+      {name: "demo", url: "https://among-duck-hellogoose.vercel.app/"},
+    ],
   },
   {
     name: "Intregated Project Kradan Board",
@@ -68,8 +84,10 @@ const projects = [
       "A Todo list application for management tasks provide a feature to customization the entire app that user can settings on own way",
     category: ["FE", "BE", "DEVOPS"],
     tools: ["vue", "springboot", "mysql", "docker"],
-    github: "https://github.com/Mixue-it-TH",
-    url: "https://intproj23.sit.kmutt.ac.th/sy2/",
+    button: [
+      {name: "github", url: "https://github.com/Mixue-it-TH"},
+      {name: "demo", url: "https://intproj23.sit.kmutt.ac.th/sy2/"},
+    ],
   },
   {
     name: "Wild-Oasis-Next.js",
@@ -78,8 +96,16 @@ const projects = [
       "A mini hotel management application made by Next.js from my React & Next.js course.",
     category: ["FE", "BE"],
     tools: ["nextjs", "supabase", "postgres"],
-    github: "https://github.com/Xsmitylnwza/The-wild-oasis-NEXTJS",
-    url: "https://the-wild-oasis-nextjs-7p3w.vercel.app/",
+    button: [
+      {
+        name: "github",
+        url: "https://github.com/Xsmitylnwza/The-wild-oasis-NEXTJS",
+      },
+      {
+        name: "demo",
+        url: "https://the-wild-oasis-nextjs-7p3w.vercel.app/",
+      },
+    ],
   },
 ];
 
@@ -110,7 +136,7 @@ export default function ProjectLayout() {
       </div>
       <Job>
         {filteredWorks.map((work, index) => (
-          <Project work={work} index={index} />
+          <Project work={work} key={index} index={index} />
         ))}
       </Job>
     </div>

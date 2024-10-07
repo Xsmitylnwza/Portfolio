@@ -6,14 +6,26 @@ const certificates = [
   {
     name: "The Ultimate React Course 2024: React, Next.js, Redux & More",
     src: "/react-cert.png",
-    url: "https://www.udemy.com/certificate/UC-563c006a-8b19-455e-9a28-9951ee0023a9/",
-    detail: "asdasd",
+    detail:
+      "React & Next.js course (80+ hours) from Udemy that teach from fundamental to Advance lecture gurantees quality by 100,000+ students",
+    button: [
+      {
+        name: "udemy",
+        url: "https://www.udemy.com/certificate/UC-563c006a-8b19-455e-9a28-9951ee0023a9/",
+      },
+    ],
   },
   {
     name: "Docker Mastery: with Kubernetes +Swarm from a Docker Captain",
     src: "/docker-cert.png",
-    url: "https://www.udemy.com/certificate/UC-352afaf7-1d2c-48d1-a3af-cd3df92ba1c5/",
-    detail: "docker",
+    detail:
+      "Docker course (20+ hours) from Udemy that teach by Docker Captain prepare lecture about fundamental of docker and compose with automate CI/CD pipeline guidance",
+    button: [
+      {
+        name: "udemy",
+        url: "https://www.udemy.com/certificate/UC-352afaf7-1d2c-48d1-a3af-cd3df92ba1c5/",
+      },
+    ],
   },
 ];
 
