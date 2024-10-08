@@ -8,6 +8,7 @@ const activiites = [
   },
   {
     src: "/Aum-48.jpg",
+    className: "xl:col-span-2",
   },
   {
     src: "/Aum-101.jpg",
@@ -19,10 +20,11 @@ const activiites = [
     src: "/Book-80.jpg",
   },
   {
-    src: "/Book-097.jpg",
+    src: "/Book-20.jpg",
+    className: "xl:col-span-2",
   },
   {
-    src: "/Book-20.jpg",
+    src: "/Book-097.jpg",
   },
 ];
 
