@@ -14,6 +14,7 @@ import {
   SiRedux,
   SiStyledcomponents,
   SiSupabase,
+  SiUdemy,
 } from "react-icons/si";
 import {Tooltip} from "react-tooltip";
 import Cappitalrize from "../../util/Cappitalrize";
@@ -37,9 +38,10 @@ const toolIcon = {
   kubernetes: <SiKubernetes color="#326de6" size={35} />,
   github: <FaGithub color="#FFF" size={35} />,
   github_action: <SiGithubactions color="#FFF" size={35} />,
+  udemy: <SiUdemy color="#a435f0" size={35} />,
 };
 
-export default function RenderTools({name, tools}) {
+export default function RenderTools({name = "name", tools}) {
   return (
     <div className="flex flex-row flex-wrap gap-3 mt-[15px] ">
       <span className="mt-[5px]">{name}:</span>

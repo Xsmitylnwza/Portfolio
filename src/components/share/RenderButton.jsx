@@ -1,6 +1,6 @@
 import {CgCornerDownRight} from "react-icons/cg";
 import {ImGithub} from "react-icons/im";
-import {SiUdemy} from "react-icons/si";
+import {SiCoursera, SiUdemy} from "react-icons/si";
 import Cappitalrize from "../../util/Cappitalrize";
 
 export default function RenderButton({work}) {
@@ -11,6 +11,7 @@ export default function RenderButton({work}) {
       class: "gap-[5px] hover:bg-yellow-600",
     },
     udemy: {icon: <SiUdemy size={20} />, class: "hover:bg-purple-800"},
+    coursera: {icon: <SiCoursera size={20} />, class: "hover:bg-blue-800"},
   };
 
   return (

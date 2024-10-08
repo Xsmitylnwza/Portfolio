@@ -27,6 +27,18 @@ const certificates = [
       },
     ],
   },
+  {
+    name: "Learning How to Learn: Powerful mental tools to help you master tough subjects",
+    src: "/how-to-learn.png",
+    detail:
+      " We’ll learn about how the brain uses two very different learning modes and how it encapsulates (“chunks”) information.",
+    button: [
+      {
+        name: "coursera",
+        url: "https://drive.google.com/file/d/1ognDSfuaguVuqmsSJ8bVOI2ccDSqDsrF/view",
+      },
+    ],
+  },
 ];
 
 export default function CertificateLayout() {

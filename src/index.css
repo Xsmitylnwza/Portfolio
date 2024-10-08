@@ -9,7 +9,7 @@ body {
 }
 
 .box {
-  background: linear-gradient(90deg, #15152c 0%, #000b44 100%);
+  background: linear-gradient(90deg, #121225 0%, #000b44 100%);
 }
 
 @keyframes floatUpDown {
@@ -39,14 +39,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1d0067; /* สีของ thumb (ส่วนที่ใช้อยู่นั้น) */
+  background: #1d0067;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #130070; /* สีของ thumb เมื่อ hover */
+  background: #130070;
 }
-::-webkit-scrollbar,
-::-webkit-scrollbar {
+::-webkit-scrollbar:horizontal {
   display: none;
-  scroll-behavior: smooth;
+}
+
+.scroll-container {
+  overflow-x: scroll; /* เปิดการเลื่อนเฉพาะแกน x */
+  overflow-y: hidden; /* ปิดการเลื่อนแกน y */
+  scroll-behavior: smooth; /* เลื่อนอย่างราบรื่น */
 }
