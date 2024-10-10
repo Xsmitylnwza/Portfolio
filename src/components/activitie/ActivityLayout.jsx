@@ -26,6 +26,10 @@ const activiites = [
   {
     src: "/Book-097.jpg",
   },
+  {
+    src: "/all.png",
+    className: "xl:col-span-3",
+  },
 ];
 
 export default function ActivityLayout() {
