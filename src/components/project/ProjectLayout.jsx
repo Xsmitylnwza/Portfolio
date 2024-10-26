@@ -36,6 +36,54 @@ const projects = [
     ],
   },
   {
+    name: "Intregated Project Kradan Board",
+    src: "/intregated-projects.png",
+    details:
+      "A Todo list application for management tasks provide a feature to customization the entire app that user can settings on own way",
+    category: ["FE", "BE", "DEVOPS"],
+    tools: ["vue", "spring_boot", "my_sql", "docker"],
+    button: [
+      {name: "github", url: "https://github.com/Mixue-it-TH"},
+      {name: "demo", url: "https://intproj23.sit.kmutt.ac.th/sy2/"},
+    ],
+  },
+  {
+    name: "Use Popcorn",
+    src: "/use-popcorn.png",
+    details:
+      "A movie searching website to find favorite to collect to watch-list and ratings from my React & Next.js course.",
+    category: ["FE"],
+    tools: ["react"],
+    button: [
+      {
+        name: "github",
+        url: "https://github.com/Xsmitylnwza/Wordwise.git",
+      },
+      {
+        name: "demo",
+        url: "https://use-popcorn-two-liart.vercel.app/",
+      },
+    ],
+  },
+  {
+    name: "World wise",
+    src: "/word-wise.png",
+    details:
+      "WorldWise is designed to help users explore, track, and learn about cities around the world.  focusing on various aspects API integration, and dynamic routing.",
+    category: ["FE"],
+    tools: ["react"],
+    button: [
+      {
+        name: "github",
+        url: "https://github.com/Xsmitylnwza/Wordwise.git",
+      },
+      {
+        name: "demo",
+        url: "https://wordwise-delta.vercel.app/",
+      },
+    ],
+  },
+  {
     name: "Decrypt the secrects password",
     src: "/password-game.png",
     details:
@@ -77,18 +125,7 @@ const projects = [
       {name: "demo", url: "https://among-duck-hellogoose.vercel.app/"},
     ],
   },
-  {
-    name: "Intregated Project Kradan Board",
-    src: "/intregated-projects.png",
-    details:
-      "A Todo list application for management tasks provide a feature to customization the entire app that user can settings on own way",
-    category: ["FE", "BE", "DEVOPS"],
-    tools: ["vue", "spring_boot", "my_sql", "docker"],
-    button: [
-      {name: "github", url: "https://github.com/Mixue-it-TH"},
-      {name: "demo", url: "https://intproj23.sit.kmutt.ac.th/sy2/"},
-    ],
-  },
+
   {
     name: "Wild-Oasis-Next.js",
     src: "/wild-oasis-nextjs.png",
@@ -104,6 +141,24 @@ const projects = [
       {
         name: "demo",
         url: "https://the-wild-oasis-nextjs-7p3w.vercel.app/",
+      },
+    ],
+  },
+  {
+    name: "Fast-Pizza Co.",
+    src: "/fast-pizza.jpg",
+    details:
+      "Fast React Pizza Co. is a hands-on React project from a Udemy course designed to simulate a pizza ordering and management system. It teaches students to build a full-featured app with both customer and admin interfaces.",
+    category: ["FE"],
+    tools: ["react"],
+    button: [
+      {
+        name: "github",
+        url: "https://github.com/Xsmitylnwza/Fast-Pizza.git",
+      },
+      {
+        name: "demo",
+        url: "https://fast-pizza-xi-ruddy.vercel.app/",
       },
     ],
   },
